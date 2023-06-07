@@ -1,2 +1,2 @@
-CREATE DATABASE march_27th;
-USE march_27th;
+CREATE DATABASE day1;
+USE day1;
