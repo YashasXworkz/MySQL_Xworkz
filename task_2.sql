@@ -8,7 +8,7 @@ created_date VARCHAR(15), last_updated_date VARCHAR(20));
 
 -- Added 3 columns
 ALTER TABLE flipkart 
-ADD COLUMN color VARCHAR(10),
+ADD COLUMN color VARCHAR(100),
 ADD COLUMN weight INT,
 ADD COLUMN warranty INT;
 
