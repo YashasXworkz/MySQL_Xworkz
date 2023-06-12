@@ -36,6 +36,11 @@ SELECT id, first_name FROM employee_details WHERE first_name LIKE "a%";
 SELECT id, first_name FROM employee_details WHERE first_name LIKE "%a";
 SELECT id, first_name FROM employee_details WHERE first_name LIKE "%an%";
 
+-- NOT LIKE Query
+SELECT id, first_name FROM employee_details WHERE first_name NOT LIKE "a%";
+SELECT id, first_name FROM employee_details WHERE first_name NOT LIKE "%a";
+SELECT id, first_name FROM employee_details WHERE first_name NOT LIKE "%an%";
+
 -- LOWER and UPPER Query
 SELECT id, LOWER(first_name) FROM employee_details;
 SELECT id, UPPER(first_name) FROM employee_details;

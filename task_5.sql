@@ -43,4 +43,14 @@ SELECT id, city, INSTR(city, 'Bang') FROM employee_details;
 SELECT id, SUBSTR(first_name, 2, 4) FROM employee_details;
 SELECT id, SUBSTR(last_name, 1, 3) FROM employee_details;
 SELECT id, SUBSTR(email, 1, 10) FROM employee_details;
+
+-- Order by Query
+SELECT id, first_name, last_name FROM employee_details ORDER BY first_name;
+SELECT id, first_name, last_name FROM employee_details ORDER BY first_name DESC;
+
+-- DISTINCT Query
+SELECT DISTINCT(department) FROM employee_details;
+
+-- Length Query
+SELECT id, first_name, LENGTH(first_name), department FROM employee_details; 
 -- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
