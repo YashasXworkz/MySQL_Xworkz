@@ -57,6 +57,8 @@ SELECT * FROM patient;
 
 # Inner Join
 SELECT h.hos_name, h.address, d.doc_name, d.specialization, d.contact_no FROM hospital as h INNER JOIN doctor d on h.hos_id = d.doc_id;
+SELECT h.hos_name, h.address, d.doc_name, d.specialization, d.contact_no, p.pat_name, p.gender FROM hospital as h INNER JOIN
+doctor d on h.hos_id = d.doc_id INNER JOIN patient p on d.doc_id = p.pat_id;
 # LEFT Join
 SELECT d.doc_id, d.doc_name, d.specialization, d.contact_no, p.pat_name, p.gender, p.age FROM doctor as d LEFT JOIN patient p on d.doc_id = p.pat_id;
 # Right Join
